@@ -1,4 +1,5 @@
 function UtilsFactory($window, $uibModal, $filter, SweetAlert) {
+  
     var specialUIModel = ['pa:boolean', 'pa:list', 'pa:datetime', 'pa:hidden', 'pa:global_file', 'pa:user_file', 'pa:global_folder', 'pa:user_folder', 'pa:credential'];
 
     function openJobInSchedulerPortal(jobId) {
@@ -152,6 +153,7 @@ function UtilsFactory($window, $uibModal, $filter, SweetAlert) {
         displayTranslatedMessage: displayTranslatedMessage,
         displayTranslatedErrorMessage: displayTranslatedErrorMessage,
         displayTranslatedSuccessMessage: displayTranslatedSuccessMessage,
+
         updateCursor : function(isWaiting){
             return updateCursor(isWaiting);
         },
